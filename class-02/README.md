@@ -2,8 +2,10 @@
 
 ## Announcements
 
+* Days off for holidays
+* Setup verification will continue during lab!
 * Quizzes:
-* Note that there will be some quiz content from time to time that we may not have covered yet (for instance, something on the quiz published today that we will not cover until the next class).
+  * Note that there will be some quiz content from time to time that we may not have covered yet (for instance, something on the quiz published today that we will not cover until the next class).
   * Keep in mind that you have unlimited re-takes on the quizzes, and also that the quizzes are designed to be treated like they are open-book. It's more about what you can figure out than what you have memorized.
   * Also, note that the quizzes have two main purposes:
     1. To get you to re-engage with the content in a different way, reinforcing your knowledge.
