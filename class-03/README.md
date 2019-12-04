@@ -4,6 +4,7 @@
 
 - It's Wednesday! How are you feeling?
 - We'll continue working on this "about me" project in lab for the rest of the week.
+- Canvas: You can now see what assignments are coming, although you can't see their contents until they unlock.
 
 ## Learning Objectives
 
