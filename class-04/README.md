@@ -2,8 +2,9 @@
 
 ## Announcements
 
-- We'll have 1:1 meetings next week to check in on your progress in the course.
-- Remember that Partner Power Hour is tomorrow!
+- Happy hour tonight 4:30 to 6:30! Please [register](https://www.eventbrite.com/e/happy-hour-at-code-fellows-tickets-76345414189) if you plan to attend.
+  - And please do not take drinks/snacks and bring them back to your table to keep working.
+- Admissions visiting at the end of lecture to say hello.
 
 ## Learning Objectives
 
