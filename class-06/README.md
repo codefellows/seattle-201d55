@@ -4,6 +4,7 @@
 
 - Feedback Review
 - [If you haven't yet scheduled a 1:1 meeting with me, please do so!](https://michelle-cf.youcanbook.me/service/jsps/cal.jsp?cal=eb676149-9d65-4ce9-ab90-db85e04d5e08&ini=1575672232500&jumpDate=2019-12-09)
+- This week's lab project will build quickly Mon-Weds, and then have a lighter day Thursday. Getting behind early in the week can make it hard to make progress later in the week, so as much as possible, make sure you're keeping on top of lab work!
 
 ## Learning Objectives
 
