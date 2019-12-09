@@ -26,3 +26,22 @@ var firstCat = {
     return this.descriptionWords[Math.floor(Math.random() * this.descriptionWords.length)];
   }
 };
+
+
+var pets = [firstDog, firstCat];
+
+var animalHolder = document.getElementById('animal-holder');
+animalHolder.textContent = 'the animals go here';
+
+// error we initially got:
+// cannot set textContent of null
+// which tells us animalHolder is null
+
+// create a p tag inside of the animalHolder for each pet
+for (var i = 0; i < pets.length; i++) {
+  // first, ask the document to create an element for us
+  var newParagraph = document.createElement('p');
+  newParagraph.textContent = `An adoptable ${pets[i].breed} that is ${pets[i].getDescription()}`;
+  // then, append that element to the element on the page
+  animalHolder.appendChild(newParagraph);
+}
