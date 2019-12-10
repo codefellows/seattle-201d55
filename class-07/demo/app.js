@@ -2,11 +2,20 @@
 
 console.log('js linked!');
 
+// Constructor!
+// Constructor names tend to be a singular noun
+// Take in values that we want as parameters
+function Pet(breedOfThisPet, weight) {
+  // Inside constructor, set up the properties we want for objects created with this constructor
+  // set key/value pairs on the new object using contextual this
+  this.breed = breedOfThisPet;
+  // name of parameter and name of property can be the same or different
+  this.weight = weight;
+}
 
-var descriptionWords = ['a', 'b', 'c'];
-var firstDog = { 
-  weight: 35, 
-  breed: 'Weimaraner', 
+var firstDog = {
+  weight: 35,
+  breed: 'Weimaraner',
   imgUrl: 'https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2016/05/19091354/Weimaraner-puppy-outdoors-with-bright-blue-eyes.20190813165758508-1.jpg',
   descriptionWords: ['hungry', 'blue eyes', 'good boy', 'cute'],
   getDescription: function() {
