@@ -66,3 +66,30 @@ animalHolder.textContent = 'the animals go here';
 for (var i = 0; i < pets.length; i++) {
   pets[i].render();
 }
+
+// take in the event parameter so that we can prevent the default
+function handleFormSubmitted(event) {
+  // prevent the default (because the default is that submitting a form refreshes the page)
+  event.preventDefault();
+  console.log(event);
+  // actually add a new pet to our table
+
+  // get the data about the new pet from the inputs
+  var breedInput = document.getElementById('breed');
+  var breedValue = breedInput['value'];
+  var weightInput = document.getElementById('weight');
+  var weightValue = weightInput.value;
+  var descriptionInput = document.getElementById('description');
+  var descriptionValue = descriptionInput.value;
+  // use our constructor to create a new pet instance
+  var newPet = new Pet(breedValue, weightValue, descriptionValue);
+  // render that pet instance to the page
+  newPet.render();
+}
+
+// set up event listener on the form
+// 1. Which element?
+var formElement = document.getElementById('new-pets');
+// 2. Which event am I listening for?
+// 3. What code should run when that event happens?
+formElement.addEventListener('submit', handleFormSubmitted);
