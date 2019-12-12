@@ -75,3 +75,24 @@ doThings();
 
 console.log(8);
 ```
+
+## Challenge 7
+
+What will this code log to the console?
+
+```javascript
+var a = 2;
+var b = 3;
+console.log(a + b);
+var c = a;
+a = 7;
+console.log(a);
+console.log(c);
+
+function printTheThing(a) {
+  console.log(a);
+}
+
+printTheThing(4);
+printTheThing(b);
+```
