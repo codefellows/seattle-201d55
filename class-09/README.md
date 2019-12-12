@@ -2,6 +2,7 @@
 
 ## Announcements
 
+- Michelle at the dentist 1-3pm today
 - Tommorrow's lab will be timed pair programming, purely HTML and CSS. So expect that you'll be very busy until 5pm on that lab.
 
 ## Learning Objectives
