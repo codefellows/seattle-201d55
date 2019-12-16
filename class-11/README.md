@@ -2,6 +2,7 @@
 
 ## Announcements
 
+- Generally, all resubmits are due by the beginning of project week, so by Dec 26 at midnight.
 - Feedback review
 - It's time to start thinking about final projects!
 
