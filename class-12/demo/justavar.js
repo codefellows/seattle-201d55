@@ -1,0 +1,1 @@
+var coolStuff = 'ice';
