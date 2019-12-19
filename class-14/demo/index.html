@@ -10,6 +10,9 @@
 <body>
   <header>
     <h1>Which Is The GOAT</h1>
+    <nav>
+      <a href="results.html">Results page</a>
+    </nav>
     <form id="nameForm">
       <label for="name">What is your name?</label>
       <input id="name" name="name" />
@@ -17,14 +20,18 @@
     </form>
   </header>
   <main>
-    <img id="1" src="images/cruisin-goat.jpg" />
-    <img id="2" src="images/float-your-goat.jpg" />
+    <div class="imgMovementContainer">
+      <p>First goat</p>
+      <img id="1" src="images/cruisin-goat.jpg" />
+    </div>
+    <div class="imgMovementContainer">
+      <p>Second goat</p>
+      <img id="2" src="images/float-your-goat.jpg" />
+    </div>
   </main>
   <footer>
-    <canvas id="resultsChart"></canvas>
   </footer>
-  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
-  <script src="justavar.js"></script>
+  <script src="common.js"></script>
   <script src="app.js"></script>
 </body>
 </html>

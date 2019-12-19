@@ -6,8 +6,20 @@ h1 {
 img {
   width: 400px;
   height: 300px;
+  transition: 1s;
+  border: 25px dashed white;
+  position: relative;
+  top: -50px;
+}
+
+.imgMovementContainer:hover img {
+  transform: translateX(300px);
 }
 
 footer {
   max-width: 400px;
+}
+
+form {
+  margin-bottom: 70px;
 }

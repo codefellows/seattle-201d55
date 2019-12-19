@@ -4,59 +4,9 @@ console.log('js linked!');
 // console.log(coolStuff);
 
 var imageElements = document.getElementsByTagName('img');
+
 var goatIndex1 = 0;
 var goatIndex2 = 1;
-// goat constructor
-
-var allGoats = [];
-
-function Goat(name, imageUrl, timesClicked) {
-  this.name = name;
-  this.imageUrl = imageUrl;
-  if (timesClicked) {
-    this.timesClicked = timesClicked;
-  } else {
-    this.timesClicked = 0;
-  }
-  // prototype method below has the same basic result as if we did these lines in the constructor:
-  // this.toString = function() {
-  //   return `${this.name} goat, clicked ${this.timesClicked} times`;
-  // };
-  allGoats.push(this);
-}
-
-// Goat.prototype.toString = function() {
-//   return `${this.name} goat, clicked ${this.timesClicked} times`;
-// };
-
-function getGoatArray(nameOfThePropertyIWant) {
-  var answer = [];
-  for (var i = 0; i < allGoats.length; i++) {
-    answer[i] = allGoats[i][nameOfThePropertyIWant];
-  }
-  return answer;
-}
-
-// is there saved goat data in localstorage?
-var savedGoatString = localStorage.getItem('savedGoats');
-if (savedGoatString) {
-  // if so, use that saved data to create goat instances
-  var arrayOfNotGoats = JSON.parse(savedGoatString);
-  // turn the not goats into goats
-  for (var i = 0; i < arrayOfNotGoats.length; i++) {
-    new Goat(arrayOfNotGoats[i].name, arrayOfNotGoats[i].imageUrl, arrayOfNotGoats[i].timesClicked);
-  }
-  // more code required here
-} else {
-  // otherwise, actually create our goats manually the old-fashioned way
-
-  new Goat('cruisin', 'images/cruisin-goat.jpg');
-  new Goat('float', 'images/float-your-goat.jpg');
-  new Goat('away', 'images/goat-away.jpg');
-  new Goat('out of hand', 'images/goat-out-of-hand.jpg');
-  new Goat('sassy', 'images/sassy-goat.jpg');
-}
-
 
 var totalClicks = 0;
 // create a function to store clicks
@@ -91,44 +41,6 @@ function imageWasClicked(event) {
     // save the goat data to localstorage
     localStorage.setItem('savedGoats', JSON.stringify(allGoats));
     // chart code thanks to https://www.chartjs.org/docs/latest/
-    var ctx = document.getElementById('resultsChart').getContext('2d');
-    // eslint-disable-next-line no-undef
-    new Chart(ctx, {
-      type: 'bar',
-      data: {
-        // what does labels do?
-        labels: getGoatArray('name'),
-        // what does datasets do?
-        // it's an array of objects
-        datasets: [{
-          // what does this label do?
-          // key, legend
-          label: '# of Votes',
-          // what does this data do?
-          // actually the values in the chart
-          data: getGoatArray('timesClicked'),
-          backgroundColor: [
-            'rgba(255, 99, 132, 0.2)',
-            'rgba(54, 162, 235, 0.2)'
-          ],
-          borderColor: [
-            'rgba(255, 99, 132, 1)',
-            'rgba(54, 162, 235, 1)'
-          ],
-          borderWidth: 1
-        }]
-      },
-      options: {
-        scales: {
-          yAxes: [{
-            ticks: {
-              beginAtZero: true,
-              stepSize: 1
-            }
-          }]
-        }
-      }
-    });
   }
 }
 
